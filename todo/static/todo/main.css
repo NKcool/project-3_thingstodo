@@ -1,0 +1,35 @@
+section.features-section {
+    background: #20272E;
+    color: wheat;
+    margin-top: 5em;
+  }
+  
+  ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  }
+  
+  ul.features-list li {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    position: relative;
+    text-align: center;
+    
+  }
+  
+  ul.features-list li:before {
+    content: '';
+    left: -2em;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/bullet.svg");
+    background-size: contain;
+    margin-right: .5em;
+  }
+  
